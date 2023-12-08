@@ -15,6 +15,13 @@ function buscarAmigo(amigos, nombre) {
 
   // Tu código aca:
   
+  let amigo;
+  amigos.forEach(elem => {
+    if (elem.nombre === nombre) {
+     amigo = elem;
+    }
+  });
+  return amigo;
 }
 
 // No modifiques nada debajo de esta linea //
